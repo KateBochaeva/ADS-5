@@ -2,21 +2,21 @@
 #include <string>
 #include <map>
 #include "tstack.h"
-int getPrior(char b){
-    if (b=='(')
+int getPrior(char b) {
+    if (b == '(')
         return 0;
-    if (b==')')
+    if (b == ')')
         return 1;
-    if ((b=='+')||(b=='-'))
+    if ((b == '+')||(b == '-'))
         return 2;
-    if ((b=='*')||(b=='/')){
+    if ((b == '*')||(b == '/')) {
         return 3;
     } else {
         return -1;
     }
 }
 std::string infx2pstfx(std::string inf) {
-   TStack<char, 100> st1;
+    TStack<char, 100> st1;
     std::string res;
     int k = 0;
     for (char a : inf) {
