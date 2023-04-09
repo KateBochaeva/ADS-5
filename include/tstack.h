@@ -8,7 +8,7 @@ class TStack {
     T arr[size] = {0};
     int top;
 
-  public:
+ public:
     TStack() {
         top = -1;
     }
@@ -32,4 +32,4 @@ class TStack {
         return top == size;
     }
 };
-#endif
+#endif  // INCLUDE_TSTACK_H_
