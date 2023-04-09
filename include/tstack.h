@@ -5,21 +5,21 @@
 template<typename T, int size = 0>
 class TStack {
   private:
-    T arr[size]={0};
+    T arr[size] = {0};
     int top;
  public:
     TStack() {
-        top=-1;
+        top = -1;
     }
-    void Push(const T& value){
-        if (!isFull()){
-            arr[++top]=value;
+    void Push(const T& value) {
+        if (!isFull()) {
+            arr[++top] = value;
         }
     }
-    T get() const{
+    T get() const {
         return arr[top];
     }
-    T pop(){
+    T pop() {
         return arr[top--];
     }
     int GetTop() const { return top;
