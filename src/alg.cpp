@@ -63,7 +63,7 @@ std::string infx2pstfx(std::string inf) {
     }
     return res;
 }
-}
+//}
 
 int eval(std::string pref) {
   TStack<int, 100> st2;
