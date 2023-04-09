@@ -7,9 +7,9 @@ int getPrior(char b) {
         return 0;
     if (b == ')')
         return 1;
-    if ((b == '+')||(b == '-'))
+    if ((b == '+') || (b == '-'))
         return 2;
-    if ((b == '*')||(b == '/')) {
+    if ((b == '*') || (b == '/')) {
         return 3;
     } else {
         return -1;
