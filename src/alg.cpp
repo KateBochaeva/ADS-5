@@ -39,7 +39,7 @@ std::string infx2pstfx(std::string inf) {
             flag = 0;
         }
         if (flag && a != ')') {
-            while (getPrior(st1.get()) >getPrior(a)) {
+            while (getPrior(st1.get()) >=getPrior(a)) {
                 res += st1.pop();
                 res += ' ';
             }
